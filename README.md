@@ -159,7 +159,7 @@ comunicam com o server, de modo que ambos compartilhem um tabuleiro.
 
 Para conseguir jogar, basta fazer o download do diretorio, entrar nele e rodar o comando:
 
-```pip install requirements.txt```
+```pip install -r requirements.txt```
 
 Após instalar as dependências, ir ao terminal e rodar:
 
