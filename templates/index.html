@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Chess | Game</title>
+</head>
+
+<body>
+    <div id="tabuleiro">
+        <div class="row">
+            <div id="_00" class="quadrado preta"></div>
+            <div id="_01" class="quadrado branca"></div>
+            <div id="_02" class="quadrado preta"></div>
+            <div id="_03" class="quadrado branca"></div>
+            <div id="_04" class="quadrado preta"></div>
+            <div id="_05" class="quadrado branca"></div>
+            <div id="_06" class="quadrado preta"></div>
+            <div id="_07" class="quadrado branca"></div>
+        </div>
+        <div class="row">
+            <div id="_10" class="quadrado branca"></div>
+            <div id="_11" class="quadrado preta"></div>
+            <div id="_12" class="quadrado branca"></div>
+            <div id="_13" class="quadrado preta"></div>
+            <div id="_14" class="quadrado branca"></div>
+            <div id="_15" class="quadrado preta"></div>
+            <div id="_16" class="quadrado branca"></div>
+            <div id="_17" class="quadrado preta"></div>
+        </div>
+        <div class="row">
+            <div id="_20" class="quadrado preta"></div>
+            <div id="_21" class="quadrado branca"></div>
+            <div id="_22" class="quadrado preta"></div>
+            <div id="_23" class="quadrado branca"></div>
+            <div id="_24" class="quadrado preta"></div>
+            <div id="_25" class="quadrado branca"></div>
+            <div id="_26" class="quadrado preta"></div>
+            <div id="_27" class="quadrado branca"></div>
+        </div>
+        <div class="row">
+            <div id="_30" class="quadrado branca"></div>
+            <div id="_31" class="quadrado preta"></div>
+            <div id="_32" class="quadrado branca"></div>
+            <div id="_33" class="quadrado preta"></div>
+            <div id="_34" class="quadrado branca"></div>
+            <div id="_35" class="quadrado preta"></div>
+            <div id="_36" class="quadrado branca"></div>
+            <div id="_37" class="quadrado preta"></div>
+        </div>
+        <div class="row">
+            <div id="_40" class="quadrado preta"></div>
+            <div id="_41" class="quadrado branca"></div>
+            <div id="_42" class="quadrado preta"></div>
+            <div id="_43" class="quadrado branca"></div>
+            <div id="_44" class="quadrado preta"></div>
+            <div id="_45" class="quadrado branca"></div>
+            <div id="_46" class="quadrado preta"></div>
+            <div id="_47" class="quadrado branca"></div>
+        </div>
+        <div class="row">
+            <div id="_50" class="quadrado branca"></div>
+            <div id="_51" class="quadrado preta"></div>
+            <div id="_52" class="quadrado branca"></div>
+            <div id="_53" class="quadrado preta"></div>
+            <div id="_54" class="quadrado branca"></div>
+            <div id="_55" class="quadrado preta"></div>
+            <div id="_56" class="quadrado branca"></div>
+            <div id="_57" class="quadrado preta"></div>
+        </div>
+        <div class="row">
+            <div id="_60" class="quadrado preta"></div>
+            <div id="_61" class="quadrado branca"></div>
+            <div id="_62" class="quadrado preta"></div>
+            <div id="_63" class="quadrado branca"></div>
+            <div id="_64" class="quadrado preta"></div>
+            <div id="_65" class="quadrado branca"></div>
+            <div id="_66" class="quadrado preta"></div>
+            <div id="_67" class="quadrado branca"></div>
+        </div>
+        <div class="row">
+            <div id="_70" class="quadrado branca"></div>
+            <div id="_71" class="quadrado preta"></div>
+            <div id="_72" class="quadrado branca"></div>
+            <div id="_73" class="quadrado preta"></div>
+            <div id="_74" class="quadrado branca"></div>
+            <div id="_75" class="quadrado preta"></div>
+            <div id="_76" class="quadrado branca"></div>
+            <div id="_77" class="quadrado preta"></div>
+        </div>
+    </div>
+    <div class="fundo_preto"></div>
+    <div class="aguardando">
+        <h1 id="title">AGUARDANDO OPONENTE!</h1>
+        <div id="horario" class="container">
+          <div class="box">
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_1"></div>
+              <div class="ponto_circulo ponto_2"></div>
+            </div>
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_3"></div>
+              <div class="ponto_circulo ponto_4"></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_1"></div>
+              <div class="ponto_circulo ponto_4"></div>
+            </div>
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_3"></div>
+              <div class="ponto_circulo ponto_2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="box">
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_1"></div>
+              <div class="ponto_circulo ponto_2"></div>
+            </div>
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_3"></div>
+              <div class="ponto_circulo ponto_4"></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_1"></div>
+              <div class="ponto_circulo ponto_4"></div>
+            </div>
+            <div class="box_menor">
+              <div class="ponto_circulo ponto_3"></div>
+              <div class="ponto_circulo ponto_2"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="box_container">
+        <div class="show">
+
+        </div>
+        <button id="btn">confirmar</button>
+    </div>
+    <div class="cheque_alert">
+        <h1 id="cheque_header">CHEQUE</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="../static/scripts/script.js"></script>
+</body>
+
+</html>

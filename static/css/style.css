@@ -1,0 +1,87 @@
+@import url('./change.css');
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #1B1464, #D980FA);
+    overflow: hidden;
+}
+
+.peca {
+    width: 70px;
+    height: 70px;
+}
+
+.peca:hover {
+    cursor: pointer;
+}
+
+#tabuleiro {
+    border: #000 solid 1px;
+}
+
+.quadrado {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #000 solid 1px;
+}
+
+.branca {
+    background-color: #cd6133;
+}
+
+.preta {
+    background-color: #d1ccc0;
+}
+
+.row {
+    display: flex;
+}
+
+.highlight {
+    background-color: #32ff7e;
+}
+
+.highlightEnemy {
+    background-color: #ff3838;
+}
+
+.cheque_alert {
+    background-color: #f53b57;
+    box-shadow: #1B1464 3px 3px 20px;
+    width: 50%;
+    height: 30%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+#cheque_header {
+    animation: chequeAnimation ease-in-out infinite 1000ms;
+    font-size: 5rem;
+}
+
+@keyframes chequeAnimation {
+    0% {
+        transform: scale(1.125);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    75% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

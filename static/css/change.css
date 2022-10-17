@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 350%;
+  color: #9980FA;
+  text-shadow: 3px 3px 3px #2d3436;
+}
+
+.box_container{
+  display: none;
+  flex-direction: column;
+  background-color: #f53b57;
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+}
+.container_container{
+  align-items:center;
+  justify-content: center;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+}
+
+.container_container:hover{
+  cursor: pointer;
+}
+
+.container_borders{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.border_left_top{
+  border-top: dashed #D980FA 10px;
+  border-left: dashed #FDA7DF 10px;
+  width: 60%;
+  height: 30%;
+}
+
+.image_teste{
+  position: absolute;
+  width: 10%;
+  height: 15%;
+}
+
+.image_teste:hover{
+  animation: pulse 700ms ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1.01);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1.01);
+  }
+}
+
+.show{
+  display:flex;
+  width:100%;
+  justify-content: space-evenly;
+}
+
+.border_left_bottom{
+  border-bottom: dashed #FDA7DF  10px;
+  border-left: dashed #D980FA 10px;
+  width: 60%;
+  height: 30%;
+}
+.border_right_top{
+  border-top: dashed  #FDA7DF 10px;
+  border-right: dashed #D980FA  10px;
+  width: 60%;
+  height: 30%;
+  margin-left: auto;
+}
+
+.border_right_bottom{
+  border-bottom: dashed #D980FA 10px;
+  border-right: dashed #FDA7DF  10px;
+  width: 60%;
+  height: 30%;
+  margin-left: auto;
+}
+
+#btn{
+  border: none;
+  height: 80px;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  margin-top: 40px;
+  background-color: #1B1464;
+  color: #fff;
+  text-shadow: -2px 2px #12CBC4;
+}
+
+#btn:hover{
+  box-shadow: -2px 2px 20px #FDA7DF;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.fundo_preto{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  opacity: .95;
+  display: flex;
+  overflow: hidden;
+}
+
+.aguardando{
+    display: flex;
+    z-index: 3;
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+
+#title{
+  animation: pulse 1500ms linear infinite;
+  font-size:2.5rem;
+  z-index:3;
+  position: absolute;
+  align-self: center;
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1.01);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1.01);
+  }
+}
+.container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  animation: rotacao 35000ms linear infinite;
+}
+
+#horario{
+  animation: rotacaoAnti 35000ms linear infinite;
+}
+
+.box{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items:center;
+  animation: rotacaoAnti 5000ms linear infinite;
+}
+
+@keyframes rotacaoAnti{
+  20%{
+    transform: rotate(-72deg);
+  }
+  40%{
+    transform: rotate(-144deg);
+  }
+  60%{
+   transform: rotate(-216deg);
+  }
+  80%{
+    transform: rotate(-288deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+.box_menor{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  animation: rotacao 3000ms linear infinite;
+}
+
+@keyframes rotacao{
+  20%{
+    transform: rotate(72deg);
+  }
+  40%{
+    transform: rotate(144deg);
+  }
+  60%{
+   transform: rotate(216deg);
+  }
+  80%{
+    transform: rotate(288deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.ponto_circulo{
+  width:15%;
+  height: 20%;
+  margin: 3%;
+  border-radius: 5%;
+  z-index:2;
+  opacity: 0.6;
+}
+
+.ponto_1{
+  animation: changeColor 4000ms linear infinite;
+}
+
+.ponto_2{
+  animation: changeColor 2000ms linear infinite;
+}
+
+.ponto_3{
+  animation: changeColor 6000ms linear infinite;
+}
+
+.ponto_4{
+  animation: changeColor 8000ms linear infinite;
+}
+
+@keyframes changeColor{
+  0%{
+    background-color:#fc5c65;
+  }
+  10%{
+    background-color:#eb3b5a;
+  }
+  20%{
+    background-color:#fd9644;
+  }
+  30%{
+    background-color:#fa8231;
+  }
+  40%{
+    background-color:#fed330;
+  }
+  50%{
+    background-color:#f7b731;
+  }
+  60%{
+    background-color:#26de81;
+  }
+  70%{
+    background-color:#20bf6b;
+  }
+  80%{
+    background-color:#2bcbba;
+  }
+  90%{
+    background-color:#0fb9b1;
+  }
+  100%{
+    background-color:#a5b1c2;
+  }
+}
