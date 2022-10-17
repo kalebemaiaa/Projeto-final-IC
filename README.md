@@ -2,9 +2,6 @@
 
 <img src='https://img.shields.io/badge/Status-alpha-blueviolet' alt='shield status: alpha'>    <img src='https://img.shields.io/badge/License-V%20MIT-blueviolet' alt='shield status: v.1.0'>
 
-## Vídeo Apresentação:
-https://youtu.be/5j2eYfoWeQg
-
 ## Objetivo
 
 Este trabalho objetivou desenvolver um jogo de xadrez através de uma interface web (com HTML, CSS e JS) e server em Python, construido com o framework
